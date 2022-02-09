@@ -1,0 +1,3 @@
+[submodule "ecr-web-image"]
+	path = ecr-web-image
+	url = https://github.com/raja-jamwal/ecr-web-image.git
