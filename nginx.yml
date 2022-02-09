@@ -1,0 +1,17 @@
+---
+
+- hosts: demo
+  become: yes
+  tasks:
+   
+    - name: install nginx
+      yum:
+        update_cache: yes
+        pkg: httpd
+        state: latest
+
+
+    - name: add users
+      user: 
+        name: bob
+        group: wheel
